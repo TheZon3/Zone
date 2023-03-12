@@ -1,36 +1,61 @@
-<link rel="stylesheet" href="sources/index.css">
+<link rel="stylesheet" href="index.css">
 <script src="sources/index.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.25">
+<head> 
+
+</head>
 
 <section>
+  <center>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <div class="topnav" id="myTopnav">
       <link rel="stylesheet" href="sources/topvav.css">
       <script src="topnav.js"></script>
       <img class="imglogo" src="sources/logo.png" style="width: 6.4%;">
       <a href="https://linktr.ee/the_zone" style="float: left;">Contact</a>
-      <a href="" onclick="alert('In Development')">About</a>
-      <a href="" onclick="alert('In Development')">News</a>
-      <a href="" onclick="alert('In Development')">Nova</a>
+      <a href="#About" onclick="starts()">About</a>
+      <a href="https://zoned.substack.com/">News</a>
+      <a href="" onclick="alert('In Development')">Content</a>
+      <a href="" onclick="alert('In Development')">Content</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
+  </center>
 </section>
 <br>
-<section>
-  <img src="sources/Banner.png" style="width: 100%; margin-top: -10px; border-radius: 10px;" >
-</section>
+  <section>
+    <center>
+      <img src="sources/Banner.png" onpointerover="starts()" style="width: 90%; margin-top: -10px;border-radius: 10px;" >
+    </center>
+    <style>
+        @media screen and (max-width: 600px){
+          .image .fade:not(:first-child) {display: none;}
+        }
+        .image .fade {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 260px;
+          background: linear-gradient(to bottom, transparent, #0e2025);
+        }
+      </style>
+      <div class="image">
+      <div class="fade"></div>
+      </div>
+  </section>
 <br>
-<section>
+<section> <b><center><h2 id="About" style="font-size: 160%;">About</h2></center></b>
+  
       <!-- Slideshow container -->
-  <div class="slideshow-container">
+  <div class="slideshow-container" style="width: 90%; margin-top: 2%;" >
     <script src="sources/slideshow.js"></script>
     <link rel="stylesheet" href="sources/slideshow.css">
     <center><h2>Our mission</h2></center>
     <!-- Full-width images with number and caption text -->
 
     <div class="mySlides fade" id="img1">
-      
+    
       
     </div>
 
@@ -42,37 +67,38 @@
 
     <div class="mySlides fade">
       
-      <img src="sources/2Impact of VR and AI.png" style="width:93%">
+      <img src="sources/2Impact of VR and AI.png" style="width:87%">
       <div class="text">The Impact</div>
     </div>
 
+    
     <div class="mySlides fade">
      
-      <img src="sources/3cc,AI,&VR.png" style="width:93%">
+      <img src="sources/3cc,AI,&VR.png" style="width:87%">
       <div class="text">Content Creation, VR, and AI</div>
     </div>
 
     <div class="mySlides fade">
       
-      <img src="sources/4AI & VR on content creators.png" style="width:93%">
+      <img src="sources/4AI & VR on content creators.png" style="width:87%">
       <div class="text">Content creation will never be the same</div>
     </div>
 
     <div class="mySlides fade">
       
-      <img src="sources/5jobless world.png" style="width:93%">
+      <img src="sources/5jobless world.png" style="width:87%">
       <div class="text">A jobless world</div>
     </div>
 
     <div class="mySlides fade">
       
-      <img src="sources/6create you dreams.png" style="width:93%">
+      <img src="sources/6create you dreams.png" style="width:87%">
       <div class="text">Create your dreams</div>
     </div>
 
     <div class="mySlides fade">
       
-      <img src="sources/7in short.png" style="width:93%">
+      <img src="sources/7in short.png" style="width:87%">
       <div class="text">In Short</div>
     </div>
 
@@ -83,7 +109,7 @@
   <br>
 
   <!-- The dots/circles -->
-  <span style="text-align:left; size: 10px;" class="dot" onclick="currentSlide(1)"></span>
+  
   <div style="text-align:center">
     
     <span class="dot" onclick="currentSlide(2)"></span>
@@ -98,3 +124,6 @@
 
 </section>
 
+
+
+<footer style="background-color: aquamarine; height: 20px; width: 120%; margin-left:0px; position: static;"></footer>

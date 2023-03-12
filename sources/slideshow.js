@@ -30,3 +30,7 @@ function showSlides(n) {
 let slideIndex2 = 0;
 showSlides();
 
+function starts (){
+  console.log("ShowStarted")
+  currentSlide(2)
+}
